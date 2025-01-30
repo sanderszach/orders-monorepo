@@ -7,15 +7,15 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-export const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
+export const Button = ({ label, onClick }: ButtonProps) => {
   return (
     <>
-    <ChakraButton>Click Me Chakra</ChakraButton>
+    <ChakraButton backgroundColor={"hotpink"}>Click Me Chakra</ChakraButton>
     <button
       onClick={onClick}
       style={{
         padding: "10px",
-        background: "hotpink",
+        background: "grey",
         color: "white",
         border: "none",
         borderRadius: "5px",
