@@ -7,10 +7,10 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-export const Button = ({ label, onClick }: ButtonProps) => {
+export function Button({ label, onClick }: ButtonProps) {
   return (
     <>
-    <ChakraButton backgroundColor={"hotpink"}>Click Me Chakra</ChakraButton>
+    <ChakraButton backgroundColor={"blue"}>Click Me Chakra</ChakraButton>
     <button
       onClick={onClick}
       style={{
